@@ -135,7 +135,7 @@ export const CardItem = ({
     handleAnimations();
   }, [handleAnimations]);
 
-  const Component = Tag as React.ComponentType<any>;
+  const Component = Tag as React.ComponentType<React.HTMLAttributes<HTMLElement> & { className?: string; ref?: React.Ref<HTMLElement> }>;
   
   return (
     <Component
