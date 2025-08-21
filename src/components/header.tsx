@@ -115,6 +115,7 @@ export function Header() {
                 </div>
               </nav>
             </motion.div>
+            </>
           )}
         </AnimatePresence>
       </div>
