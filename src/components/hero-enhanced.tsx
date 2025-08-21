@@ -122,7 +122,7 @@ export function HeroEnhanced() {
       </section>
 
                         {/* Third Section - Animated Cards */}
-                  <section id="theme" className="py-20 bg-white mt-0">
+                  <section id="theme" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-white mt-0">
                     <div className="container px-4 mx-auto">
                       <motion.div
                         className="text-center mb-16"
@@ -136,7 +136,7 @@ export function HeroEnhanced() {
                         </h2>
                       </motion.div>
                                               <motion.div
-                          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-items-center"
+                          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-16 justify-items-center py-8 sm:py-12 md:py-16"
                           initial={{ opacity: 0 }}
                           whileInView={{ opacity: 1 }}
                           transition={{ duration: 0.5 }}
@@ -147,6 +147,7 @@ export function HeroEnhanced() {
                             whileInView={{ opacity: 1, y: 0, rotateX: 0, scale: 1, rotateZ: 0 }}
                             transition={{ duration: 1.8, delay: 0.1, ease: "easeOut" }}
                             viewport={{ once: true, margin: "-100px" }}
+                            className="p-4 sm:p-6 md:p-8"
                           >
                             <AnimatedCard
                               image={process.env.NODE_ENV === 'production' ? '/Ne-Zha-Landing-Page/Nezha_baby.jpeg' : '/Nezha_baby.jpeg'}
@@ -162,6 +163,7 @@ export function HeroEnhanced() {
                             whileInView={{ opacity: 1, y: 0, rotateX: 0, scale: 1, rotateZ: 0 }}
                             transition={{ duration: 1.8, delay: 0.3, ease: "easeOut" }}
                             viewport={{ once: true, margin: "-100px" }}
+                            className="p-4 sm:p-6 md:p-8"
                           >
                             <AnimatedCard
                                                               image={process.env.NODE_ENV === 'production' ? '/Ne-Zha-Landing-Page/nezha_aobing.jpeg' : '/nezha_aobing.jpeg'}
@@ -177,6 +179,7 @@ export function HeroEnhanced() {
                             whileInView={{ opacity: 1, y: 0, rotateX: 0, scale: 1, rotateZ: 0 }}
                             transition={{ duration: 1.8, delay: 0.5, ease: "easeOut" }}
                             viewport={{ once: true, margin: "-100px" }}
+                            className="p-4 sm:p-6 md:p-8"
                           >
                             <AnimatedCard
                                                               image={process.env.NODE_ENV === 'production' ? '/Ne-Zha-Landing-Page/nezha_lotus.jpeg' : '/nezha_lotus.jpeg'}
