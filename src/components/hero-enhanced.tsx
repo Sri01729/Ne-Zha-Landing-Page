@@ -86,7 +86,7 @@ export function HeroEnhanced() {
                   >
                     <div className="w-full h-full rounded-2xl shadow-2xl overflow-hidden relative">
                       <Image
-                        src="/nezha_childhood.jpeg"
+                        src={process.env.NODE_ENV === 'production' ? '/Ne-Zha-Landing-Page/nezha_childhood.jpeg' : '/nezha_childhood.jpeg'}
                         alt="Nezha in his childhood - a powerful and rebellious protection deity"
                         fill
                         className="object-cover"
@@ -149,7 +149,7 @@ export function HeroEnhanced() {
                             viewport={{ once: true, margin: "-100px" }}
                           >
                             <AnimatedCard
-                              image="/Nezha_baby.jpeg"
+                              image={process.env.NODE_ENV === 'production' ? '/Ne-Zha-Landing-Page/Nezha_baby.jpeg' : '/Nezha_baby.jpeg'}
                               alt="Ne Zha as a baby - Divine Birth"
                               chapter="Chapter I"
                               title="Divine Birth"
@@ -164,7 +164,7 @@ export function HeroEnhanced() {
                             viewport={{ once: true, margin: "-100px" }}
                           >
                             <AnimatedCard
-                              image="/nezha_aobing.jpeg"
+                                                              image={process.env.NODE_ENV === 'production' ? '/Ne-Zha-Landing-Page/nezha_aobing.jpeg' : '/nezha_aobing.jpeg'}
                               alt="Ne Zha vs Ao Bing - Dragon's Defiance"
                               chapter="Chapter II"
                               title="Dragon's Defiance"
@@ -179,7 +179,7 @@ export function HeroEnhanced() {
                             viewport={{ once: true, margin: "-100px" }}
                           >
                             <AnimatedCard
-                              image="/nezha_lotus.jpeg"
+                                                              image={process.env.NODE_ENV === 'production' ? '/Ne-Zha-Landing-Page/nezha_lotus.jpeg' : '/nezha_lotus.jpeg'}
                               alt="Ne Zha with lotus - Lotus Rebirth"
                               chapter="Chapter III"
                               title="Lotus Rebirth"
@@ -315,7 +315,7 @@ export function HeroEnhanced() {
                         viewport={{ once: true, margin: "-100px" }}
                       >
                         <Image
-                          src="/ne_zha_wallpaper.jpeg"
+                          src={process.env.NODE_ENV === 'production' ? '/Ne-Zha-Landing-Page/ne_zha_wallpaper.jpeg' : '/ne_zha_wallpaper.jpeg'}
                           alt="Ne Zha Epic Battle Scene"
                           fill
                           className="object-cover"

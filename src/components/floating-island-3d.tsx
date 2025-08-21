@@ -22,7 +22,7 @@ function Loader() {
 }
 
 function NezhaModelInner() {
-  const gltf = useLoader(GLTFLoader, '/Nezha3dmodel.glb')
+  const gltf = useLoader(GLTFLoader, process.env.NODE_ENV === 'production' ? '/Ne-Zha-Landing-Page/Nezha3dmodel.glb' : '/Nezha3dmodel.glb')
   const meshRef = useRef<THREE.Group>(null)
 
   useEffect(() => {

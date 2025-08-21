@@ -37,7 +37,7 @@ const Feature239 = () => {
                   {/* Bg Image div */}
                   <div className="relative h-full w-full overflow-hidden rounded-3xl">
                   <Image
-                    src="/Na Tra.jpeg"
+                    src={process.env.NODE_ENV === 'production' ? '/Ne-Zha-Landing-Page/Na Tra.jpeg' : '/Na Tra.jpeg'}
                     alt="Ne Zha - The Rebel Prince with Wind Fire Wheels"
                     fill
                     className="object-cover"
