@@ -16,9 +16,16 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const scrollToSection = (sectionId: string) => {
+    console.log('Scrolling to section:', sectionId)
     const element = document.getElementById(sectionId)
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      console.log('Element found:', element)
+      // Add a small delay to ensure the menu closes before scrolling
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    } else {
+      console.log('Element not found for section:', sectionId)
     }
     setIsMobileMenuOpen(false) // Close mobile menu after navigation
   }
@@ -83,7 +90,7 @@ export function Header() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.2 }}
-                className="fixed inset-0 bg-black/20 md:hidden"
+                className="fixed inset-0 bg-black/20 md:hidden z-40"
                 onClick={() => setIsMobileMenuOpen(false)}
               />
               
@@ -93,7 +100,7 @@ export function Header() {
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="md:hidden bg-white border-t-2 border-black shadow-lg relative z-50"
+                className="md:hidden bg-white border-t-2 border-black shadow-lg absolute top-full left-0 right-0 z-50"
               >
               <nav className="py-4 px-4">
                 <div className="flex flex-col gap-3">
