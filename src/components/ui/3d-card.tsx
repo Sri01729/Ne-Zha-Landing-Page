@@ -135,15 +135,17 @@ export const CardItem = ({
     handleAnimations();
   }, [handleAnimations]);
 
+  const Component = Tag as React.ComponentType<any>;
+  
   return (
-    <Tag
+    <Component
       ref={ref}
       className={cn("w-fit transition duration-200 ease-linear", className)}
       {...rest}
     >
       {children}
-    </Tag>
-  ) as React.ReactElement;
+    </Component>
+  );
 };
 
 // Create a hook to use the context
