@@ -1,11 +1,11 @@
 "use client"
 
-import { useRef, useEffect, useState, Suspense } from 'react'
+import { useRef, useEffect, Suspense } from 'react'
 import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { OrbitControls, Environment, Float, PresentationControls, useProgress, Html } from '@react-three/drei'
 import * as THREE from 'three'
-import { Loading3D } from './loading-3d'
+
 
 function Loader() {
   const { progress } = useProgress()

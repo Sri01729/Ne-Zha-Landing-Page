@@ -1,11 +1,7 @@
-import { ArrowUpRight, ChevronRight, ChevronUp } from "lucide-react";
 import React from "react";
 import Image from "next/image";
 
 import { cn } from "@/lib/utils";
-
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 
 const Feature239 = () => {
   return (
@@ -17,11 +13,11 @@ const Feature239 = () => {
               <div className="flex w-full flex-col gap-8 py-20 px-8 lg:col-span-5">
 
               <h1 className="text-5xl md:text-7xl font-bold tracking-tighter">
-                "My Fate is My Own,
+                &ldquo;My Fate is My Own,
                 <br />
                 Not for the Heavens
                 <br />
-                to Decide."
+                to Decide.&rdquo;
               </h1>
               <p className="text-muted-foreground tracking-tight md:text-xl">
                 More than a myth, Ne Zha is a symbol of self-determination. His refusal to bow to tyrannical authority, to his pre-written destiny, or even to the gods themselves, has made his story resonate for centuries. His most famous declaration captures his entire spirit:

@@ -1,8 +1,7 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
 import { NezhaModel3D } from "./floating-island-3d"
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion } from "framer-motion"
 import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card"
 import { AnimatedCard } from "./animated-card"
 import { Feature239 } from "./feature239"
