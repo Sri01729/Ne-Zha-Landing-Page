@@ -162,8 +162,22 @@
 /* Inner container is now a positioning context */
 .inner-container {
   position: relative;
-  width: 350px;
-  height: 500px;
+  width: 280px;
+  height: 400px;
+}
+
+@media (min-width: 640px) {
+  .inner-container {
+    width: 320px;
+    height: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .inner-container {
+    width: 350px;
+    height: 500px;
+  }
 }
 
 /* Main card holds the stable, non-filtered content */

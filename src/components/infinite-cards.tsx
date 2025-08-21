@@ -126,7 +126,7 @@ const reviews: ReviewCard[] = [
 function ReviewCard({ review }: { review: ReviewCard }) {
   return (
     <motion.div
-      className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 min-w-[320px] max-w-[320px]"
+      className="bg-white border border-gray-200 rounded-lg p-4 sm:p-6 shadow-sm hover:shadow-md transition-shadow duration-300 min-w-[280px] max-w-[280px] sm:min-w-[300px] sm:max-w-[300px] md:min-w-[320px] md:max-w-[320px]"
       whileHover={{ y: -5 }}
       transition={{ duration: 0.2 }}
     >
@@ -166,16 +166,16 @@ export function InfiniteCards() {
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <h2 className="text-7xl md:text-9xl font-bold tracking-tighter mb-4">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter mb-4">
             Critical Acclaim
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
             Ne Zha II has captured the hearts of critics worldwide, earning praise for its stunning visuals, empowering story, and technical achievements.
           </p>
         </motion.div>
 
         <div className="relative overflow-hidden">
-          <div className="flex gap-6 animate-scroll">
+          <div className="flex gap-3 sm:gap-4 md:gap-6 animate-scroll">
             {/* First set of cards */}
             {reviews.map((review, index) => (
               <ReviewCard key={`first-${index}`} review={review} />
