@@ -276,12 +276,6 @@
     display: block; /* Show on tablet and desktop */
   }
 }
-  background: linear-gradient(
-    -30deg,
-    var(--electric-light-color),
-    transparent
-  );
-}
 
 /* Content container - positioned inside the stable main-card */
 .content-container {
