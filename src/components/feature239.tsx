@@ -12,7 +12,7 @@ const Feature239 = () => {
               {/* Left Content */}
               <div className="flex w-full flex-col gap-8 py-20 px-8 lg:col-span-5">
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter">
                 &ldquo;My Fate is My Own,
                 <br />
                 Not for the Heavens
@@ -23,7 +23,7 @@ const Feature239 = () => {
                 More than a myth, Ne Zha is a symbol of self-determination. His refusal to bow to tyrannical authority, to his pre-written destiny, or even to the gods themselves, has made his story resonate for centuries. His most famous declaration captures his entire spirit:
               </p>
               <div className="flex w-full flex-col gap-4">
-                <div className="text-2xl sm:text-3xl font-bold tracking-tight text-red-600">
+                <div className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight text-red-600">
                   我命由我不由天
                 </div>
                 <div className="text-sm text-muted-foreground italic">

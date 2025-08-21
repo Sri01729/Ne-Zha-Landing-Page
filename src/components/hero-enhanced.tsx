@@ -105,7 +105,7 @@ export function HeroEnhanced() {
                           viewport={{ once: true, margin: "-100px" }}
                           className="space-y-8"
                         >
-              <h2 className="text-7xl md:text-9xl font-bold tracking-tighter">
+              <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter">
                 An Unyielding Spirit
               </h2>
               <div className="space-y-6">
@@ -263,7 +263,7 @@ export function HeroEnhanced() {
                         viewport={{ once: true, margin: "-100px" }}
                         className="text-center mb-16"
                       >
-                                                <h2 className="text-7xl md:text-9xl font-bold tracking-tighter">
+                                                <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter">
                           Experience Ne Zha
                         </h2>
                       </motion.div>
@@ -300,7 +300,7 @@ export function HeroEnhanced() {
 
                                             {/* Simple Heading */}
                       <motion.h3
-                        className="text-7xl md:text-9xl font-bold tracking-tighter text-black mb-8 text-center"
+                        className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter text-black mb-8 text-center"
                         initial={{ opacity: 0, y: 100, scale: 0.8 }}
                         whileInView={{ opacity: 1, y: 0, scale: 1 }}
                         transition={{ duration: 1.2, ease: "easeOut" }}
