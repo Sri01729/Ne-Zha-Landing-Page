@@ -143,7 +143,7 @@ export const CardItem = ({
     >
       {children}
     </Tag>
-  );
+  ) as React.ReactElement;
 };
 
 // Create a hook to use the context
