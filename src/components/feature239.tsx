@@ -33,7 +33,7 @@ const Feature239 = () => {
             </div>
             {/* Right Content */}
             <DottedDiv className="group size-full place-self-end p-6 lg:col-span-7 flex items-center">
-                              <div className="bg-muted/50 group-hover:bg-muted relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] w-full p-4 transition-all ease-in-out">
+                              <div className="bg-muted/50 group-hover:bg-muted relative h-[450px] sm:h-[550px] md:h-[650px] lg:h-[750px] w-full p-4 transition-all ease-in-out">
                   {/* Bg Image div */}
                   <div className="relative h-full w-full overflow-hidden rounded-3xl">
                   <Image
