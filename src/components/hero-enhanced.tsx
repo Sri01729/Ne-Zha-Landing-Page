@@ -30,15 +30,15 @@ export function HeroEnhanced() {
               viewport={{ once: true, margin: "-100px" }}
               className="text-left space-y-8"
             >
-             <h1 className="text-7xl md:text-9xl font-bold tracking-tighter">
+             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter">
             BEHOLD
             <br />
             NE ZHA
           </h1>
-          <h2 className="text-xl md:text-2xl font-medium tracking-wide uppercase">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-medium tracking-wide uppercase">
             THE REBEL GOD. THE LOTUS PRINCE.
           </h2>
-            <p className="text-lg font-light leading-relaxed">
+            <p className="text-base sm:text-lg font-light leading-relaxed">
              Born of chaos, forged in fire, and reborn to defy the heavens. Discover the myth of a boy who dared to challenge fate itself.
             </p>
             <div className="flex items-center gap-4">
@@ -53,7 +53,7 @@ export function HeroEnhanced() {
               whileInView={{ opacity: 1, x: 0, scale: 1, rotateY: 0 }}
               transition={{ delay: 0.4, duration: 1.5, ease: "easeOut" }}
               viewport={{ once: true, margin: "-100px" }}
-              className="relative h-[700px] lg:h-[800px] xl:h-[900px]"
+              className="relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[800px] xl:h-[900px]"
             >
             {/* 3D Model Container */}
             <div className="relative w-full h-full rounded-2xl overflow-hidden">

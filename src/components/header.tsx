@@ -30,7 +30,7 @@ export function Header() {
             transition={{ duration: 0.5 }}
           >
             <Link href="/" className="flex items-center">
-              <span className="text-xl font-medium tracking-tight">NE ZHA — LOTUS PRINCE</span>
+              <span className="text-sm sm:text-base md:text-xl font-medium tracking-tight">NE ZHA — LOTUS PRINCE</span>
             </Link>
           </motion.div>
 
@@ -45,7 +45,7 @@ export function Header() {
               >
                 <button
                   onClick={() => scrollToSection(item.href.replace('#', ''))}
-                  className="px-4 py-1.5 bg-white border-2 border-black rounded-full text-black font-medium text-xs hover:bg-black hover:text-white transition-all duration-300 ease-in-out shadow-md hover:shadow-lg"
+                  className="px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 bg-white border-2 border-black rounded-full text-black font-medium text-xs hover:bg-black hover:text-white transition-all duration-300 ease-in-out shadow-md hover:shadow-lg"
                 >
                   {item.name}
                 </button>

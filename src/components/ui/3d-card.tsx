@@ -8,6 +8,7 @@ import React, {
   useContext,
   useRef,
   useEffect,
+  useCallback,
 } from "react";
 
 const MouseEnterContext = createContext<
@@ -49,7 +50,7 @@ export const CardContainer = ({
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={cn(
-          "py-20 flex items-center justify-center",
+          "py-8 sm:py-12 md:py-16 lg:py-20 flex items-center justify-center",
           containerClassName
         )}
         style={{
@@ -86,7 +87,7 @@ export const CardBody = ({
   return (
     <div
       className={cn(
-        "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
+        "h-64 w-64 sm:h-80 sm:w-80 md:h-96 md:w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
         className
       )}
     >
@@ -121,18 +122,18 @@ export const CardItem = ({
   const ref = useRef<HTMLDivElement>(null);
   const [isMouseEntered] = useMouseEnter();
 
-  useEffect(() => {
-    handleAnimations();
-  }, [isMouseEntered, handleAnimations]);
-
-  const handleAnimations = () => {
+  const handleAnimations = useCallback(() => {
     if (!ref.current) return;
     if (isMouseEntered) {
       ref.current.style.transform = `translateX(${translateX}px) translateY(${translateY}px) translateZ(${translateZ}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg)`;
     } else {
       ref.current.style.transform = `translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)`;
     }
-  };
+  }, [isMouseEntered, translateX, translateY, translateZ, rotateX, rotateY, rotateZ]);
+
+  useEffect(() => {
+    handleAnimations();
+  }, [handleAnimations]);
 
   return (
     <Tag
