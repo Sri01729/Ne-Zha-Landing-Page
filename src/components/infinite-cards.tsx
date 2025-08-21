@@ -166,7 +166,7 @@ export function InfiniteCards() {
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter mb-4">
+          <h2 className="text-7xl md:text-9xl font-bold tracking-tighter mb-4">
             Critical Acclaim
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">

@@ -12,7 +12,7 @@ const Feature239 = () => {
               {/* Left Content */}
               <div className="flex w-full flex-col gap-8 py-20 px-8 lg:col-span-5">
 
-              <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter">
+              <h1 className="text-7xl md:text-9xl font-bold tracking-tighter">
                 &ldquo;My Fate is My Own,
                 <br />
                 Not for the Heavens
