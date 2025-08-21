@@ -93,7 +93,7 @@ export function Header() {
                 className="fixed inset-0 bg-black/20 md:hidden z-40"
                 onClick={() => setIsMobileMenuOpen(false)}
               />
-              
+
               {/* Menu */}
               <motion.div
                 initial={{ opacity: 0, height: 0 }}
