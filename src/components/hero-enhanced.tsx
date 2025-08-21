@@ -70,7 +70,7 @@ export function HeroEnhanced() {
                         {/* Second Section - 3D Card and Content */}
                   <section id="saga" className="py-20 bg-white mt-0">
                     <div className="container px-4 mx-auto">
-                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
                         {/* Left side - 3D Card */}
                         <motion.div
                           initial={{ opacity: 0, x: -150, rotateY: -30, scale: 0.7 }}
@@ -78,8 +78,8 @@ export function HeroEnhanced() {
                           transition={{ duration: 1.5, ease: "easeOut" }}
                           viewport={{ once: true, margin: "-100px" }}
                         >
-              <CardContainer className="w-full">
-                <CardBody className="w-full h-[500px]">
+              <CardContainer className="w-full max-w-2xl mx-auto">
+                <CardBody className="w-full h-[600px] sm:h-[650px] md:h-[700px] lg:h-[750px]">
                   <CardItem
                     translateZ="100"
                     className="w-full h-full"
