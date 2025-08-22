@@ -2,6 +2,8 @@
 
 A cinematic, interactive website showcasing the epic legend of Ne Zha, the rebellious Lotus Prince from Chinese mythology. Built with modern web technologies and featuring stunning 3D animations.
 
+🌐 **Live Website**: [https://sri01729.github.io/Ne-Zha-Landing-Page/](https://sri01729.github.io/Ne-Zha-Landing-Page/)
+
 ![Ne Zha Website](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
 ![Three.js](https://img.shields.io/badge/Three.js-3D-orange?style=for-the-badge&logo=three.js)
